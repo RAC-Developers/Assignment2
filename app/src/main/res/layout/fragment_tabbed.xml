@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="PlaceholderFragment1">
+
+    <RelativeLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorButton"
+        android:fontFamily="@font/allura"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="Username"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorButton"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"
+                android:src="@drawable/ic_brightness_5_black_24dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/toolbar"
+        android:src="@drawable/profile1" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/toolbar"
+        android:layout_toEndOf="@id/imageView"
+        app:cardBackgroundColor="@android:color/transparent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="3431"
+                    android:textColor="@color/colorButton"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posts"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:paddingRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="6530"
+                    android:textColor="@color/colorButton"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Followers"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="217"
+                    android:textColor="@color/colorButton"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Following"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/imageView"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Tazeen Batool"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_below="@id/Username"
+        android:layout_marginEnd="-29dp"
+        android:layout_marginStart="20dp"
+        android:text="Student\nDeveloper"
+        android:textSize="20sp" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorButton"
+        app:menu="@menu/center_navigation">
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <!--<GridView-->
+        <!--android:id="@+id/gridview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/navigation"-->
+        <!--android:columnWidth="90dp"-->
+        <!--android:numColumns="auto_fit"-->
+        <!--android:verticalSpacing="0dp"-->
+        <!--android:horizontalSpacing="0dp"-->
+        <!--android:stretchMode="columnWidth"-->
+        <!--android:gravity="center"-->
+         <!--/>-->
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigation"
+        android:columnCount="3">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/a" 
+            android:background="@drawable/imagebackground"/>
+        <ImageView 
+            android:layout_height="100dp"
+            android:layout_width="100dp" 
+            android:id="@+id/img2"
+            android:src="@drawable/b"
+            android:background="@drawable/imagebackground"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp" 
+            android:id="@+id/img3" 
+            android:src="@drawable/c"
+            android:background="@drawable/imagebackground"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp" 
+            android:layout_width="100dp"
+            android:id="@+id/img4" 
+            android:src="@drawable/d"
+            android:background="@drawable/imagebackground"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img5"
+            android:src="@drawable/e"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img6"
+            android:src="@drawable/f"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img7"
+            android:src="@drawable/g"
+            android:layout_columnWeight="1"  />
+
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/a"
+            android:background="@drawable/imagebackground"/>
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:id="@+id/img9"
+            android:src="@drawable/b"
+            android:background="@drawable/imagebackground"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:id="@+id/img10"
+            android:src="@drawable/c"
+            android:background="@drawable/imagebackground"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:id="@+id/img11"
+            android:src="@drawable/d"
+            android:background="@drawable/imagebackground"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img12"
+            android:src="@drawable/e"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img13"
+            android:src="@drawable/f"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img14"
+            android:src="@drawable/g"
+            android:layout_columnWeight="1"  />
+
+
+        <ImageView
+            android:id="@+id/img15"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/a"
+            android:background="@drawable/imagebackground"/>
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:id="@+id/img16"
+            android:src="@drawable/b"
+            android:background="@drawable/imagebackground"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:id="@+id/img17"
+            android:src="@drawable/c"
+            android:background="@drawable/imagebackground"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:id="@+id/img18"
+            android:src="@drawable/d"
+            android:background="@drawable/imagebackground"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img19"
+            android:src="@drawable/e"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img20"
+            android:src="@drawable/f"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img21"
+            android:src="@drawable/g"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img22"
+            android:src="@drawable/g"
+            android:layout_columnWeight="1"  />
+        <ImageView
+            android:layout_height="100dp"
+            android:background="@drawable/imagebackground"
+            android:layout_width="100dp"
+            android:id="@+id/img23"
+            android:src="@drawable/g"
+            android:layout_columnWeight="1"  />
+        <ImageView
+        android:layout_height="100dp"
+        android:background="@drawable/imagebackground"
+        android:layout_width="100dp"
+        android:id="@+id/img24"
+        android:src="@drawable/g"
+        android:layout_columnWeight="1"  />
+        <ImageView
+        android:layout_height="100dp"
+        android:background="@drawable/imagebackground"
+        android:layout_width="100dp"
+        android:id="@+id/img25"
+        android:src="@drawable/g"
+        android:layout_columnWeight="1"  />
+        <ImageView
+        android:layout_height="100dp"
+        android:background="@drawable/imagebackground"
+        android:layout_width="100dp"
+        android:id="@+id/img26"
+        android:src="@drawable/g"
+        android:layout_columnWeight="1"  />
+
+    </GridLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorButton"
+        app:menu="@menu/bottom_navigation">
+        
+    </android.support.design.widget.BottomNavigationView>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="213dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/navigation"
+            android:layout_below="@+id/cardview"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="77dp"
+            android:layout_toEndOf="@id/Username"
+            android:background="@color/colorButton"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Edit Profile" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
